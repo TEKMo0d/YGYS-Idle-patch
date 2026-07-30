@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:theme="@android:style/Theme.NoTitleBar" package="com.kakenhi.ygys">
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qcplay.txwy.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.txwy.passport.model.SharePopupActivity" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.Panel"/>
+        <activity android:label="@string/app_name" android:name="com.txwy.passport.wxapi.WXEntryActivity" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.Panel"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:label="@string/app_name" android:name="com.txwy.passport.model.FBInviteResultActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:label="@string/app_name" android:name="com.txwy.passport.model.FBInviteActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:label="@string/app_name" android:name="com.txwy.passport.model.FBFeedActivity" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <receiver android:name="com.txwy.passport.model.TxwyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.txwy.passport.model.TxwyBroadcastReceiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="it.partytrack.sdk.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="DC_APPID" android:value="3E9B6588521E96796520A66936C2ADDD"/>
+        <meta-data android:name="TXWY_APPKEY" android:value=""/>
+        <meta-data android:name="TXWY_FUID" android:value="ygys_android"/>
+        <meta-data android:name="DC_CHANNEL" android:value="MM_AD"/>
+    </application>
+    <uses-feature android:glEsVersion="0x20000"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

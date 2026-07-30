@@ -1,0 +1,20 @@
+version: 3.0.3
+apkFileName: com.txwy.and.ygys_v13_anfensi.com.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 9
+  targetSdkVersion: 23
+versionInfo:
+  versionCode: 24
+  versionName: 13
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- jpg
+- png
+- assets/bin/Data/sharedassets1.assets.split66
+- assets/bin/Data/sharedassets1.assets.split67
+- assets/bin/Data/sharedassets1.assets.split68

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ff00ff00" android:id="@id/pay_get_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="@string/pay_list_header_get" android:layout_weight="1.0" />
+    <TextView android:textSize="20.0sp" android:textColor="#77787b" android:gravity="center" android:id="@id/pay_pay_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_list_header_pay" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/other_pay_id" android:background="@drawable/txwysdk_paybtn_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp" android:src="@drawable/txwysdk_pay_btn_up" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/mainLayout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/imageViewRegBack" android:layout_width="852.0dp" android:layout_height="1136.0dp" android:src="@drawable/txwysdk_background" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@android:string/untitled" />
+            <ImageView android:id="@id/ImageViewRegTxwy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:src="@drawable/txwysdk_txwy" android:scaleType="matrix" android:layout_alignBottom="@id/imageViewRegBack" android:layout_centerHorizontal="true" android:contentDescription="@android:string/untitled" />
+            <ImageView android:id="@id/top_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dp" android:src="@drawable/txwysdk_close" android:scaleType="matrix" android:adjustViewBounds="true" android:layout_alignRight="@id/imageViewRegBack" android:onClick="onCloseClick" />
+            <RelativeLayout android:paddingBottom="60.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/imageLogo" android:layout_width="120.0dp" android:layout_height="120.0dp" android:src="@drawable/txwysdk_logo_default" android:adjustViewBounds="true" android:maxWidth="120.0dp" android:maxHeight="120.0dp" android:minWidth="120.0dp" android:minHeight="120.0dp" android:layout_centerHorizontal="true" android:contentDescription="@android:string/untitled" />
+                <RelativeLayout android:id="@id/RegForm" android:background="@drawable/txwysdk_loginform" android:layout_width="280.0dp" android:layout_height="175.0dp" android:layout_below="@id/imageLogo" android:layout_centerHorizontal="true">
+                    <Button android:id="@id/RegsignUpBtn" android:background="@drawable/txwysdk_guest_btn_bd_off" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginLeft="110.0dp" android:layout_marginTop="125.0dp" android:layout_marginRight="12.0dp" android:onClick="onGuestBindClick" android:contentDescription="@android:string/untitled" />
+                    <EditText android:textColor="#130c0e" android:id="@id/RegeditUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="12.0dp" android:hint="@string/reg_uesrname" android:ems="10" android:inputType="textPersonName" style="@style/txwy_editbox_style" />
+                    <EditText android:textColor="#130c0e" android:id="@id/RegeditPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dp" android:layout_marginTop="65.0dp" android:layout_marginRight="12.0dp" android:hint="@string/reg_password" android:ems="10" android:inputType="textPassword" style="@style/txwy_editbox_style" />
+                    <Button android:id="@id/CancelBtn" android:background="@drawable/txwysdk_bind_no" android:layout_width="90.0dp" android:layout_height="40.0dp" android:layout_marginLeft="12.0dp" android:layout_marginTop="125.0dp" android:onClick="onCloseClick" android:contentDescription="@android:string/untitled" />
+                    <ImageView android:id="@id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="44.0dp" android:layout_alignRight="@id/CancelBtn" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/imagenNotify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txwysdk_bind_notify" android:layout_above="@id/RegForm" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imageText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:src="@drawable/txwysdk_bind_text" android:layout_below="@id/RegForm" android:layout_alignRight="@id/RegForm" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

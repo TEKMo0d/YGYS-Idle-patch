@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/txwysdk_pay_ui" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_linear" android:background="@drawable/txwysdk_pay_ui_head" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txwysdk_invite_gift" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/top_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txwysdk_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/center_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dp" />
+</LinearLayout>

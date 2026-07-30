@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/splashLayout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/imageViewBack" android:layout_width="852.0dp" android:layout_height="1136.0dp" android:src="@drawable/txwysdk_background" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@android:string/untitled" />
+            <ImageView android:id="@id/ImageViewTxwy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dp" android:src="@drawable/txwysdk_txwy" android:scaleType="matrix" android:layout_alignBottom="@id/imageViewBack" android:layout_centerHorizontal="true" android:contentDescription="@android:string/untitled" />
+            <RelativeLayout android:id="@id/relativeLayout1" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <Button android:id="@id/btnBind" android:background="@drawable/txwysdk_guest_btn_bd_off" android:layout_width="160.0dp" android:layout_height="45.0dp" android:layout_marginTop="20.0dp" android:layout_centerHorizontal="true" android:onClick="onBindClick" android:contentDescription="@android:string/untitled" />
+                <Button android:id="@id/btnLater" android:background="@drawable/txwysdk_guest_btn_nobd_off" android:layout_width="160.0dp" android:layout_height="45.0dp" android:layout_marginTop="10.0dp" android:layout_below="@id/btnBind" android:layout_centerHorizontal="true" android:onClick="onLaterClick" android:contentDescription="@android:string/untitled" />
+            </RelativeLayout>
+            <ImageView android:id="@id/imageNotice" android:layout_width="275.0dp" android:layout_height="110.0dp" android:layout_marginTop="60.0dp" android:src="@drawable/txwysdk_guest_ts" android:adjustViewBounds="true" android:maxWidth="120.0dp" android:maxHeight="120.0dp" android:minWidth="120.0dp" android:minHeight="120.0dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@android:string/untitled" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

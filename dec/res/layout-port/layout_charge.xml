@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/txwysdk_pay_ui" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_linear" android:background="@drawable/txwysdk_pay_ui_head" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txwysdk_pay_ui_title" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/top_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txwysdk_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/topjoy_offer_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dp" android:src="@drawable/txwysdk_tapjoy_offer_select" android:layout_alignParentBottom="true" android:onClick="onTapjoyOfferClick" />
+        <ImageView android:id="@id/topjoy_offer_adexchange_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dp" android:src="@drawable/txwysdk_topjoy_offer_adexchange_select" android:layout_toRightOf="@id/topjoy_offer_btn" android:layout_alignParentBottom="true" android:onClick="onTapjoyOfferAdExchangClick" />
+        <ListView android:id="@id/center_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:divider="#00000000" android:dividerHeight="0.0dp" android:layout_above="@id/topjoy_offer_btn" />
+    </RelativeLayout>
+</LinearLayout>
